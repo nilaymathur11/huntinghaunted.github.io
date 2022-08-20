@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: murder;
+    src: url(murder.ttf);
+}
+@font-face {
+    font-family: hell;
+    src: url(Hell.ttf);
+}
+.navheader {
+    text-align: center;
+    font-family: murder;
+    color: rgb(65, 9, 9);
+    font-size: 10vw;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0.5vw 0.5vh 1vw rgb(0, 0, 0);
+    /* background-image: linear-gradient(90deg, #22222a, #200404); */
+    position: fixed;
+    height: 6vh;
+    overflow: hidden;
+    z-index: 10;
+    background-color: #020410;
+}
+.navheader a{
+    text-decoration: none;
+    color: rgb(65, 9, 9);
+
+}
+.navheader img{
+    width: 5.5vw;
+}
+.main {
+    margin: 0 auto;
+    display: block;
+    height: 100%;
+    /* margin-top: 60px; */
+}
+.mainInner{
+    display: table;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+#sidebarMenu {
+    height: 100%;
+    position: fixed;
+    left: 0;
+    width: 11vw;
+    margin-top: 5vh;
+    transform: translateX(-250px);
+    /* transition: transform 250ms ease-in-out; */
+    background: linear-gradient(180deg, #160307 0%, #020410 100%);
+}
+.sidebarMenuInner{
+    margin:0;
+    padding:0;
+    border-top: 0.1vh solid rgba(213, 20, 20, 0.1);
+}
+.sidebarMenuInner li{
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+    color: rgb(217, 74, 74);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 2vw;
+    cursor: pointer;
+    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.10);
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 4vw;
+    color: rgba(9, 167, 43, 0.5);
+}
+.sidebarMenuInner li a{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5vw;
+    color: rgba(226, 17, 17, 0.677);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+input[type="checkbox"]:checked ~ #sidebarMenu {
+    transform: translateX(0);
+}
+
+input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+}
+.sidebarIconToggle {
+    position: fixed;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 2vh;
+    left: 1vw;
+    height: 2vh;
+    width: 4vw;
+}
+  
+.spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0.2898550724637681vh;
+    width: 100%;
+    background-color: rgb(230, 6, 6);
+}
+.horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 0.2898550724637681vh;
+}
+.diagonal.part-1 {
+    position: relative;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    float: left;
+}
+.diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: relative;
+    float: left;
+    margin-top: 0.2898550724637681vh;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .horizontal {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    opacity: 0;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(135deg);
+    margin-top: 0.7729468599033816vh;
+}
+input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    transform: rotate(-135deg);
+    margin-top: -0.8695652173913043vh;
+}
+@media only screen and (min-width: 768px){
+    .sidebarIconToggle{
+        width: 1.5vw;
+    }
+    .navheader{
+        font-size: 4vw;
+    }
+    .navheader img{
+        width: 2.5vw;
+    }
+    .sidebarMenuInner li a{
+        font-size: 1.5vw;
+    }
+}

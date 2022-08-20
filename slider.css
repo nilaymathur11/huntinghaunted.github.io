@@ -1,0 +1,139 @@
+i {
+	position: relative;
+	display: block;
+	width: 28vw;
+	height: 15vh;
+	overflow: hidden;
+	border-radius: 2vw;
+    box-shadow: 0.5vw 0.5vh 1vw rgb(0, 0, 0);
+    margin-top: 1vh;
+    margin-bottom: 6vh;
+    margin-left: 2vw;
+}
+
+i:before, i:after {
+	content: '⥪';
+	position: absolute;
+	top: 80%;
+	left: 1rem;
+	z-index: 2;
+	width: 4.5vw;
+	height: 2.5vh;
+	background: rgb(185, 59, 13);
+	color: white;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	pointer-events: none;
+}
+
+i:after {
+	content: '⥭';
+	left: auto;
+	right: 1rem;
+}
+
+/* I haven't found a way for IE and Edge to let me style inputs that way */
+input {
+	appearance: none;
+	-ms-appearance: none;
+	-webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0.4830917874396135vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transform: translateX(100%);
+	transition: transform ease-in-out 400ms;
+	z-index: 1;
+}
+
+input:focus {
+	outline: none;
+}
+
+input:after {
+	content: attr(title);
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background-color: rgba(0,0,0,0.4);
+	color: white;
+	padding: .5rem;
+	font-size: 1rem;
+	border-radius: 0.4830917874396135vh;
+}
+
+input:not(checked):before {
+	content: '';
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	top: 80%;
+	left: calc(-100% + 1rem);
+}
+
+input:checked:before {
+	display: none;
+	left: 1rem;
+}
+
+input:checked {
+	transform: translateX(0);
+	z-index: 0;
+	box-shadow: -0.4830917874396135vh 0.966183574879227vh 1.932367149758454vh -1.4492753623188406vh rgba(0,0,0,1);
+}
+
+input:checked + input:before {
+	left: -3rem;
+}
+
+input:checked + input ~ input:before {
+	display: none;
+}
+@media only screen and (min-width: 768px){
+    i {
+        position: relative;
+        display: block;
+        width: 22vw;
+        height: 30vh;
+        overflow: hidden;
+        border-radius: 2vw;
+        box-shadow: 0.5vw 0.5vh 1vw rgb(0, 0, 0);
+        margin-top: 1vh;
+        margin-bottom: 6vh;
+        margin-left: 2vw;
+    }
+    i:before, i:after {
+        content: '⥪';
+        position: absolute;
+        top: 80%;
+        left: 1rem;
+        z-index: 2;
+        width: 2rem;
+        height: 2rem;
+        background: rgb(185, 59, 13);
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+    }
+    
+    i:after {
+        content: '⥭';
+        left: auto;
+        right: 1rem;
+    }
+    
+
+}
+
