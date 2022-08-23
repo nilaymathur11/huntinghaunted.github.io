@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @font-face {
     font-family: murder;
     src: url(murder.ttf);
@@ -16,18 +17,18 @@
 }
 
 body {
-    background-image: linear-gradient(to right, #7b1d1d, #4d3131, #201b1b);
+    background-image: linear-gradient(to right, #441313, #4d3131, #201b1b);
 }
 
 main {
-    padding-left: 12vw;
-    padding-right: 15vw;
+    padding-left: 4vw;
+    padding-right: 6vw;
 }
 
 .sitedesc {
     text-align: center;
     font-family: 'Bebas Neue', cursive;
-    font-size: 6vw;
+    font-size: 9vw;
     color: #454f3b;
     font-style: italic;
     margin-top: 3.5vh;
@@ -50,12 +51,13 @@ main {
 }
 
 .logodesc a{
+    margin-top: 10vh;
     text-decoration: none;
     display: flex;
     justify-content: center;
     font-family: hell;
     color: rgb(22, 2, 2);
-    font-size: 10vw;
+    font-size: 12vw;
     text-shadow: 0.5vw 0.5vh 1vw brown;
     animation: tada;
     animation-duration: 1s;
@@ -65,8 +67,8 @@ main {
 #stories {
     margin-top: 2vh;
     display: block;
-    background-image: linear-gradient(60deg, #6a5e5e,#413e3e 100%);
-    font-size: 3vw;
+    background-image: linear-gradient(120deg, rgb(153, 152, 152),rgb(179, 179, 179));
+    font-size: 6vw;
     justify-items: space-around;
     /* width: 42vw; */
     /* text-decoration: underline; */
@@ -78,26 +80,29 @@ main {
 }
 .storiescont{
     margin-left: 2.5vw;
-    font-family: 'Rubik Marker Hatch', cursive;
-    color: #6C2222;
+    font-family: 'Staatliches', cursive;
+    font-size: 6vw;
+    color: #000000;
 
 }
 
 .contentdesc {
+    border-radius: 2vw;
     display: block;
     margin-top: 2vh;
     color: antiquewhite;
-    font-size: 3.5vw;
+    font-size: 6vw;
     font-family: 'Bebas Neue', cursive;
     background-color: black;
     box-shadow: 0.5vw 0.5vh 2vw black;
 }
 
 .contentdesc article {
+    border-radius: 2vw;
     display: block;
     margin-top: 1vh;
     color: rgb(183, 121, 41);
-    font-size: 3vw;
+    font-size: 5vw;
     font-family: 'Edu VIC WA NT Beginner';
     background-color: #4e0404;
     border: solid 0.5vw black;
@@ -108,19 +113,20 @@ iframe{
     display: inline-flex;
     float: right;
     border-radius: 2vw;
-    width: 28vw;
+    width: 32vw;
     margin-right: 6vw;
     box-shadow: 0.5vw 0.5vh 1vw rgb(0, 0, 0);
     margin-bottom: 6vh;
-    height: 15vh;
+    height: 16vh;
 }
 .imdb img{
     margin-left: 0.4vw;
-    width: 6vw;
+    width: 9vw;
     
 }
 .imdb{
-    font-size: 3.5vw;
+    border-radius: 2vw;
+    font-size: 5.5vw;
     /* margin-left: 1vw; */
     float: right;
     background-color: #988083;
@@ -131,7 +137,7 @@ iframe{
     margin-top: 0.1vw;
 }
 .nextpage{
-    font-size: 2.8vw;
+    font-size: 4vw;
     /* margin-left: 1vw; */
     float: right;
     /* font-family: 'Bebas Neue', cursive; */
@@ -151,33 +157,33 @@ iframe{
     animation-duration: 1s;
     /* width: 80vw; */
     border-radius: 2vw;
-    height: 16.5vh;
+    height: 24vh;
     display: block;
     margin-top: 4vh;
     color: rgb(67, 38, 41);
-    font-size: 3vw;
+    font-size: 5vw;
     font-family: 'Rubik Distressed', cursive;
-    background-image: linear-gradient(120deg, rgb(40, 39, 39),rgb(17, 16, 16));
+    background-image: linear-gradient(120deg, rgb(153, 152, 152),rgb(179, 179, 179));
     box-shadow: 0.5vw 0.5vh 2vw black;
-    margin-bottom: 1vh;
+    margin-bottom: 2vh;
 }
 .pageheading{
-    margin-left: 2vw;
+    /* margin-left: 2vw; */
     animation: fadeIn;
     animation-duration: 1s;
 
 }
 .pageheading a{
     text-decoration: none;
-    color: rgb(133, 128, 129);
+    color: rgb(0, 0, 0);
 }
 .pageheading a:hover {
     color: rgb(65, 18, 18);
   }
 .summaryimg img{
-    margin-left: 0.6vw;
-    /* width: 12vw; */
-	height: 12vh;
+    margin-left: 0.1vw;
+    width: 16vw;
+	height: 14vh;
     border-radius: 1vw;
     animation: fadeIn;
     animation-duration: 1s;
@@ -185,7 +191,7 @@ iframe{
     
 }
 .summaryimg img:hover{
-    height: 12.5vh;
+    height: 14.5vh;
     /* animation: pulse; */
 }
 .summaryimg{
@@ -194,9 +200,34 @@ iframe{
     
 }
 @media only screen and (min-width: 768px){
+    .logodesc a{
+        margin-top: 12vh;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        font-family: hell;
+        color: rgb(22, 2, 2);
+        font-size: 12vw;
+        text-shadow: 0.5vw 0.5vh 1vw brown;
+        animation: tada;
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
+    .storiescont{
+        margin-left: 2.5vw;
+        font-family: 'Staatliches', cursive;
+        font-size: 4vw;
+        color: #000000;
+        margin-left: 6.5vw;
+    
+    }
+    main {
+        padding-left: 12vw;
+        padding-right: 12vw;
+    }
     .summaryimg img{
-        margin-left: 3.5vw;
-        /* width: 12vw; */
+        margin-left: 2.5vw;
+        width: 12vw;
         height: 30vh;
         border-radius: 1vw;
         animation: fadeIn;
@@ -212,14 +243,14 @@ iframe{
         animation: fadeIn;
         animation-duration: 1s;
         /* width: 80vw; */
-        border-radius: 2vw;
+        border-radius: 1vw;
         height: 38vh;
         display: block;
         margin-top: 8vh;
         color: rgb(67, 38, 41);
-        font-size: 2vw;
+        font-size: 2.5vw;
         font-family: 'Rubik Distressed', cursive;
-        background-image: linear-gradient(120deg, rgb(40, 39, 39),rgb(17, 16, 16));
+        background-image: linear-gradient(120deg, rgb(153, 152, 152),rgb(179, 179, 179));
         box-shadow: 0.5vw 0.5vh 2vw black;
         margin-bottom: 4vh;
     }
@@ -236,7 +267,7 @@ iframe{
     #stories {
         margin-top: 9vh;
         display: block;
-        background-image: linear-gradient(60deg, #6a5e5e,#413e3e 100%);
+        background-image: linear-gradient(120deg, rgb(153, 152, 152),rgb(179, 179, 179));
         font-size: 3vw;
         justify-items: space-around;
         /* width: 42vw; */
@@ -269,11 +300,12 @@ iframe{
         border-radius: 1vw;
     }
     iframe{
+        margin-top: 0.5vh;
         display: inline-flex;
         float: right;
         border-radius: 2vw;
         width: 22vw;
-        margin-right: 6vw;
+        margin-right: 4vw;
         box-shadow: 0.5vw 0.5vh 1vw rgb(0, 0, 0);
         margin-bottom: 6vh;
         height: 30vh;
@@ -315,6 +347,11 @@ iframe{
         /* font-family: 'Edu VIC WA NT Beginner'; */
         margin-right: 0.8vw;
         margin-top: 0.1vw;
+    }
+    .scroller img{
+        width: 10vw;
+        display: inline;
+        /* margin-bottom: 10vw; */
     }
 
 }

@@ -9,6 +9,7 @@
     src: url(Hell.ttf);
 }
 .navheader {
+    top: 0px;
     text-align: center;
     font-family: murder;
     color: rgb(65, 9, 9);
@@ -20,24 +21,26 @@
     box-shadow: 0.5vw 0.5vh 1vw rgb(0, 0, 0);
     /* background-image: linear-gradient(90deg, #22222a, #200404); */
     position: fixed;
-    height: 6vh;
+    height: 7vh;
     overflow: hidden;
     z-index: 10;
     background-color: #020410;
 }
 .navheader a{
+    font-size: 10vw;
     text-decoration: none;
-    color: rgb(65, 9, 9);
+    color: rgb(164, 161, 161);
 
 }
 .navheader img{
-    width: 5.5vw;
+    margin-top: 1vh;
+    width: 7.5vw;
 }
 .main {
     margin: 0 auto;
     display: block;
     height: 100%;
-    /* margin-top: 60px; */
+    /* margin-top: 0px; */
 }
 .mainInner{
     display: table;
@@ -53,16 +56,19 @@
     letter-spacing: 1.25px;
 }
 #sidebarMenu {
+    top: 6vh;
     height: 100%;
     position: fixed;
     left: 0;
-    width: 11vw;
-    margin-top: 5vh;
-    transform: translateX(-250px);
+    width: 100vw;
+    /* margin-top: 5vh; */
+    transform: translateX(-100vw);
     /* transition: transform 250ms ease-in-out; */
-    background: linear-gradient(180deg, #160307 0%, #020410 100%);
+    background-image: linear-gradient(180deg, #160307 0%, #020410 100%);
 }
 .sidebarMenuInner{
+    background-image: linear-gradient(180deg, #160307 0%, #020410 100%);
+    text-align: center;
     margin:0;
     padding:0;
     border-top: 0.1vh solid rgba(213, 20, 20, 0.1);
@@ -73,9 +79,9 @@
     color: rgb(217, 74, 74);
     text-transform: uppercase;
     font-weight: bold;
-    padding: 2vw;
+    padding: 12vw;
     cursor: pointer;
-    border-bottom: 0.1vh solid rgba(255, 255, 255, 0.10);
+    /* border-bottom: 0.1vh solid rgba(255, 255, 255, 0.10); */
 }
 .sidebarMenuInner li span{
     display: block;
@@ -84,7 +90,7 @@
 }
 .sidebarMenuInner li a{
     font-family: 'Bebas Neue', cursive;
-    font-size: 2.5vw;
+    font-size: 9vw;
     color: rgba(226, 17, 17, 0.677);
     text-transform: uppercase;
     font-weight: bold;
@@ -110,8 +116,8 @@ input[type=checkbox] {
     width: 100%;
     top: 2vh;
     left: 1vw;
-    height: 2vh;
-    width: 4vw;
+    height: 6vh;
+    width: 6vw;
 }
   
 .spinner {
@@ -160,16 +166,32 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
     margin-top: -0.8695652173913043vh;
 }
 @media only screen and (min-width: 768px){
+    .sidebarMenuInner li{
+        font-family: 'Bebas Neue', cursive;
+        list-style: none;
+        color: rgb(217, 74, 74);
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 6vw;
+        cursor: pointer;
+        /* border-bottom: 0.1vh solid rgba(255, 255, 255, 0.10); */
+    }
     .sidebarIconToggle{
+        height: 2vh;
         width: 1.5vw;
     }
+    .navheader a{
+        height: 6.5vh;
+        font-size: 4vw;
+    }
     .navheader{
+        height: 6.5vh;
         font-size: 4vw;
     }
     .navheader img{
         width: 2.5vw;
     }
     .sidebarMenuInner li a{
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
 }
